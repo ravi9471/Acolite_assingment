@@ -4,7 +4,7 @@ import "../Style.css";
 function CompanyMainImage() {
   return (
     <div>
-        <img src="public\TestPage-Desktop.png" alt="company_main_logo" className="mainImage" />
+        <img src="TestPage-Desktop.png" alt="company_main_logo" className="mainImage" />
     </div>
   )
 }

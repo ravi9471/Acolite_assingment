@@ -4,7 +4,7 @@ import "../Style.css";
 const Header = () => {
   return (
     <header className="header">
-      <img src="public\CitizenIcon.png" alt="Citizens Bank Logo" className="logo" />
+      <img src="CitizenIcon.png" alt="Citizens Bank Logo" className="logo" />
       <h1 className="bank-heading">Citizens Bank</h1>
     </header>
   );
