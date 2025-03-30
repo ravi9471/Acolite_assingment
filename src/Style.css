@@ -1,0 +1,257 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+ /* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: white;
+    
+  }
+  
+  /* Logo */
+  .logo {
+    height: 40px;
+    margin-right: 7px;
+  }
+
+  /* Heading */
+  .bank-heading {
+      font-size: 40px;
+      color: #008555;
+  
+    }
+
+  .mainImage {
+    width: 100%;
+    height: 489px;
+  }
+  
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+  }
+
+  
+  /* Heading: Centered */
+  .hero_head {
+    text-align: center;
+    font-size: 28px;
+    color: #008555; /* Adjust as needed */
+  }
+  
+  /* Paragraph: Left-Aligned */
+  .hero-content p {
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Button */
+  .cta-btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .hero_head2 {
+    text-align: center;
+    font-size: 28px;
+    color: #008555; /* Adjust as needed */
+    margin-top: 50px
+  }
+
+  .hero-line1 {
+    border: none;
+    height: 2px;
+    background-color: #008555;
+    margin: 20px auto;
+    width: 100px;
+    display: block;
+  }
+
+  /* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px;
+    padding: 20px 20px;
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Individual Feature Box */
+  .feature {
+    background: white;
+    padding: 30px;
+    border-radius: 0px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Vertical Separator */
+  .feature:nth-child(odd) {
+    border-right: 1px solid #ccc; /* Adds a vertical line between columns */
+    padding-right: 10px;
+  }
+  
+  .feature:nth-child(even) {
+    padding-left: 20px;
+  }
+  
+  /* Feature Heading */
+  .feature h3 {
+    font-size: 22px;
+    color: #008555;
+    margin-bottom: 10px;
+  }
+  
+  /* Feature Description */
+  .feature p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+ /* Loan Section */
+  .Loan_main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Loan_Head {
+    background-color: #008555;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  
+  .Loan_Head p {
+    font-size: xx-large;
+    margin: 0;
+  }
+  
+  .Loan_para {
+    background-color: hsla(148, 93%, 41%, 0.1);
+    padding: 10px;
+    margin-top: 0;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  
+  .testimonial {
+    text-align: center;
+    width: 30%;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .testimonial-img {
+    width: 80px;
+    border-radius: 50%;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+  }
+
+  .disclaimer {
+    font-size: 10px;
+    color: #555;
+    
+  }
+
+  .img_media {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+
+  .footer-line {
+    border: none;
+    height: 1px;
+    background-color: #008555;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .header {
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .bank-heading {
+        font-size: 30px;
+    }
+
+    .Loan_Head{
+        height: fit-content;
+        text-align: center;
+    }
+  
+    .features {
+        grid-template-columns: 1fr;
+      }
+    
+      .feature {
+        text-align: center;
+        align-items: center;
+      }
+  
+    .testimonials {
+      flex-direction: column;
+    }
+  
+    .testimonial {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .disclaimer {
+        font-size: 10px;
+        padding: 10px;
+      }
+  }
